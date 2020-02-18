@@ -63,6 +63,22 @@ class CityControllerIT {
         verify(cityService, times(1)).getCities(5);
     }
 
+    @Test
+    public void getCitiesByPath_return200Status() throws Exception{
+        mockMvc.perform(get("/city/1")).andExpect(status().isOk());
+    }
+
+    @Test
+    public void getCitiesByPath_throws400_withStringPath() throws Exception{
+        mockMvc.perform(get("/city/one")).andExpect(status().isBadRequest());
+    }
+
+    @Test
+    public void getCitiesByPath_callsCityService_onSuccess() throws Exception{
+        mockMvc.perform(get("/city/5"));
+        verify(cityService, times(1)).getCities(5);
+    }
+
 
 
 
