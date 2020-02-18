@@ -47,5 +47,18 @@ class CityControllerTest {
         verify(cityService, times(1)).getCities(3);
     }
 
+    @Test
+    public void getCityWithPath_returnListOfCities_withAvailableId(){
+        when(cityService.getCities(3)).thenReturn(cityList);
+        assertEquals(cityList, cityController.getCityListWithPath(3));
+    }
+
+    @Test
+    public void getCityWithPath_callsCityService_withAvailableId(){
+        when(cityService.getCities(3)).thenReturn(cityList);
+        assertEquals(cityList, cityController.getCityListWithPath(3));
+        verify(cityService, times(1)).getCities(3);
+    }
+
 
 }

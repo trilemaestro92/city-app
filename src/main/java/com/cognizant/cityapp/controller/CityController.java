@@ -32,13 +32,13 @@ public class CityController {
         return cityService.getCities(stateId);
     }
 
-//    @GetMapping("/{stateId}")
-//    @ResponseStatus(value = HttpStatus.OK)
-//    public List<City> getCityListWithPath(@PathVariable(value = "stateId") Integer stateId){
-//        System.out.println("pathVariable: ");
-//        System.out.println(stateId);
-//        return cityService.getCities(stateId);
-//    }
+    @GetMapping("/{stateId}")
+    @ResponseStatus(value = HttpStatus.OK)
+    public List<City> getCityListWithPath(@PathVariable(value = "stateId") Integer stateId){
+        System.out.println("pathVariable: ");
+        System.out.println(stateId);
+        return cityService.getCities(stateId);
+    }
 //
 //    @GetMapping("/json")
 //    @ResponseStatus(value = HttpStatus.OK)
