@@ -1,0 +1,9 @@
+---
+
+spring:
+  profiles: local, default
+
+server:
+  port: 8081
+
+

@@ -10,7 +10,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @ExtendWith(MockitoExtension.class)
 class CityServiceTest {
@@ -18,24 +19,24 @@ class CityServiceTest {
     @InjectMocks
     private CityService cityService;
 
-    List<City> cityList;
-
     @BeforeEach
     void setUp() {
-        cityList = new ArrayList<>();
-        cityList.add(new City("Atlanta"));
-        cityList.add(new City("Norcross"));
-        cityList.add(new City("Johns Creek"));
     }
 
     @Test
-    public void getCity_shouldReturn_listOfCities(){
-        assertEquals(cityList.get(0).getName() ,cityService.getCities(1).get(0).getName());
+    public void getCity_shouldReturnListOfCities_withAvailableId(){
+        assertEquals(3 ,cityService.getCities(1).size());
     }
 
     @Test void getCity_shouldThrowNullPointerException_ifIdDoesNotExist(){
         assertThrows(NullPointerException.class, ()->{
-            cityService.getCities(5);
+            cityService.getCities(3);
+        });
+    }
+
+    @Test void getCity_shouldThrowNullPointerException_ifIdIsNull(){
+        assertThrows(NullPointerException.class, ()->{
+            cityService.getCities(null);
         });
     }
 
