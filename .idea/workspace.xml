@@ -19,7 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8cafd11-4a6c-4081-b4a7-34baeddaf0c4" name="Default Changelist" comment="" />
+    <list default="true" id="f8cafd11-4a6c-4081-b4a7-34baeddaf0c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/controller/CityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/model/StateId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/model/StateId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/service/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/service/CityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/util/CityData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/util/CityData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cognizant/cityapp/controller/CityControllerIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cognizant/cityapp/controller/CityControllerIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cognizant/cityapp/controller/CityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cognizant/cityapp/controller/CityControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cognizant/cityapp/service/CityServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cognizant/cityapp/service/CityServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +75,7 @@
   <component name="PropertiesComponent">
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../city-app-crud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -80,13 +90,26 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CityControllerIT.getCitiesByParams_callsCityService_onSuccess">
-    <configuration name="CityControllerIT.getCitiesByParams_callsCityService_onSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Application.CityAppApplication">
+    <configuration name="CityAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cognizant.cityapp.CityAppApplication" />
+      <module name="city-app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cognizant.cityapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityControllerIT.getCitiesByHeader_callsCityService_onSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cognizant.cityapp.controller.CityControllerIT.getCitiesByParams_callsCityService_onSuccess&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cognizant.cityapp.controller.CityControllerIT.getCitiesByHeader_callsCityService_onSuccess&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -101,12 +124,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CityControllerIT.getCitiesByParams_return200Status" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CityControllerIT.getCitiesByHeader_throws400_withIncorrectHeaderKey" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cognizant.cityapp.controller.CityControllerIT.getCitiesByParams_return200Status&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cognizant.cityapp.controller.CityControllerIT.getCitiesByHeader_throws400_withIncorrectHeaderKey&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -121,12 +144,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CityControllerIT.getCitiesByParams_throws400_wrongParamsValue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CityControllerIT.getCitiesByHeader_throws400_withIncorrectHeaderValue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cognizant.cityapp.controller.CityControllerIT.getCitiesByParams_throws400_wrongParamsValue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cognizant.cityapp.controller.CityControllerIT.getCitiesByHeader_throws400_withIncorrectHeaderValue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -141,32 +164,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CityControllerTest.getCityWithParams_callsCityService_withAvailableId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CityControllerIT.getCitiesByHeader_throws404_withWrongUri" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cognizant.cityapp.controller.CityControllerTest.getCityWithParams_callsCityService_withAvailableId&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CityControllerTest.getCityWithParams_throwsError_withUnAvailableId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cognizant.cityapp.controller.CityControllerTest.getCityWithParams_throwsError_withUnAvailableId&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cognizant.cityapp.controller.CityControllerIT.getCitiesByHeader_throws404_withWrongUri&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -183,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CityControllerIT.getCitiesByParams_callsCityService_onSuccess" />
-        <item itemvalue="Gradle.CityControllerIT.getCitiesByParams_throws400_wrongParamsValue" />
-        <item itemvalue="Gradle.CityControllerIT.getCitiesByParams_return200Status" />
-        <item itemvalue="Gradle.CityControllerTest.getCityWithParams_throwsError_withUnAvailableId" />
-        <item itemvalue="Gradle.CityControllerTest.getCityWithParams_callsCityService_withAvailableId" />
+        <item itemvalue="Application.CityAppApplication" />
+        <item itemvalue="Gradle.CityControllerIT.getCitiesByHeader_callsCityService_onSuccess" />
+        <item itemvalue="Gradle.CityControllerIT.getCitiesByHeader_throws404_withWrongUri" />
+        <item itemvalue="Gradle.CityControllerIT.getCitiesByHeader_throws400_withIncorrectHeaderValue" />
+        <item itemvalue="Gradle.CityControllerIT.getCitiesByHeader_throws400_withIncorrectHeaderKey" />
       </list>
     </recent_temporary>
   </component>
@@ -216,46 +219,51 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="706" y="454" width="374" height="624" key="#com.intellij.ide.util.MemberChooser" timestamp="1582066748464">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="706" y="443" width="374" height="624" key="#com.intellij.ide.util.MemberChooser" timestamp="1582122962662">
+      <screen x="0" y="0" width="1920" height="1053" />
     </state>
+    <state x="706" y="443" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1053/0.0.1920.1053@0.0.1920.1053" timestamp="1582122962662" />
     <state x="706" y="454" width="374" height="624" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582066748464" />
     <state x="656" y="596" width="424" height="482" key="FileChooserDialogImpl" timestamp="1582060798198">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="656" y="596" width="424" height="482" key="FileChooserDialogImpl/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582060798198" />
-    <state width="1034" height="1077" key="GridCell.Tab.0.bottom" timestamp="1582067731112">
+    <state width="1874" height="197" key="GridCell.Tab.0.bottom" timestamp="1582126771883">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1053/0.0.1920.1053@0.0.1920.1053" timestamp="1582126771883" />
+    <state width="1034" height="494" key="GridCell.Tab.0.bottom/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582068383602" />
+    <state width="1874" height="197" key="GridCell.Tab.0.center" timestamp="1582126771883">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="197" key="GridCell.Tab.0.center/0.0.1920.1053/0.0.1920.1053@0.0.1920.1053" timestamp="1582126771883" />
+    <state width="1034" height="494" key="GridCell.Tab.0.center/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582068383602" />
+    <state width="1874" height="197" key="GridCell.Tab.0.left" timestamp="1582126771883">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="197" key="GridCell.Tab.0.left/0.0.1920.1053/0.0.1920.1053@0.0.1920.1053" timestamp="1582126771883" />
+    <state width="1034" height="494" key="GridCell.Tab.0.left/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582068383602" />
+    <state width="1874" height="197" key="GridCell.Tab.0.right" timestamp="1582126771883">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="197" key="GridCell.Tab.0.right/0.0.1920.1053/0.0.1920.1053@0.0.1920.1053" timestamp="1582126771883" />
+    <state width="1034" height="494" key="GridCell.Tab.0.right/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582068383602" />
+    <state width="1034" height="680" key="GridCell.Tab.1.bottom" timestamp="1582068383600">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1034" height="1077" key="GridCell.Tab.0.bottom/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582067731112" />
-    <state width="1034" height="1077" key="GridCell.Tab.0.center" timestamp="1582067731112">
+    <state width="1034" height="680" key="GridCell.Tab.1.bottom/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582068383600" />
+    <state width="1034" height="680" key="GridCell.Tab.1.center" timestamp="1582068383600">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1034" height="1077" key="GridCell.Tab.0.center/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582067731112" />
-    <state width="1034" height="1077" key="GridCell.Tab.0.left" timestamp="1582067731112">
+    <state width="1034" height="680" key="GridCell.Tab.1.center/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582068383600" />
+    <state width="1034" height="680" key="GridCell.Tab.1.left" timestamp="1582068383600">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1034" height="1077" key="GridCell.Tab.0.left/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582067731112" />
-    <state width="1034" height="1077" key="GridCell.Tab.0.right" timestamp="1582067731112">
+    <state width="1034" height="680" key="GridCell.Tab.1.left/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582068383600" />
+    <state width="1034" height="680" key="GridCell.Tab.1.right" timestamp="1582068383600">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1034" height="1077" key="GridCell.Tab.0.right/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582067731112" />
-    <state width="1034" height="680" key="GridCell.Tab.1.bottom" timestamp="1582064333759">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1034" height="680" key="GridCell.Tab.1.bottom/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582064333759" />
-    <state width="1034" height="680" key="GridCell.Tab.1.center" timestamp="1582064333759">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1034" height="680" key="GridCell.Tab.1.center/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582064333759" />
-    <state width="1034" height="680" key="GridCell.Tab.1.left" timestamp="1582064333759">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1034" height="680" key="GridCell.Tab.1.left/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582064333759" />
-    <state width="1034" height="680" key="GridCell.Tab.1.right" timestamp="1582064333759">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1034" height="680" key="GridCell.Tab.1.right/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582064333759" />
+    <state width="1034" height="680" key="GridCell.Tab.1.right/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582068383600" />
     <state x="56" y="235" width="1024" height="843" key="SettingsEditor" timestamp="1582065066253">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -264,21 +272,5 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="614" y="510" width="466" height="568" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1582058057706" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/service/CityService.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cognizant/cityapp/service/CityService.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

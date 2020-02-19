@@ -30,7 +30,7 @@ class CityServiceTest {
 
     @Test void getCity_shouldThrowNullPointerException_ifIdDoesNotExist(){
         assertThrows(NullPointerException.class, ()->{
-            cityService.getCities(3);
+            cityService.getCities(99);
         });
     }
 
@@ -39,5 +39,9 @@ class CityServiceTest {
             cityService.getCities(null);
         });
     }
+
+
+
+
 
 }

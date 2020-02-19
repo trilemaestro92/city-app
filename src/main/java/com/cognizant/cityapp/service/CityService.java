@@ -2,7 +2,6 @@ package com.cognizant.cityapp.service;
 
 import com.cognizant.cityapp.model.City;
 import com.cognizant.cityapp.util.CityData;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

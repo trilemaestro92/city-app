@@ -39,27 +39,27 @@ public class CityController {
         System.out.println(stateId);
         return cityService.getCities(stateId);
     }
-//
-//    @GetMapping("/json")
-//    @ResponseStatus(value = HttpStatus.OK)
-//    public List<City> getCityListWithJson(
-//            @RequestBody StateId json
-//    ){
-//
-//        System.out.println("json: ");
-//        System.out.println(json.getStateId());
-//
-//        return cityService.getCities(json.getStateId());
-//
-//    }
-//
-//    @GetMapping("/header")
-//    @ResponseStatus(value = HttpStatus.OK)
-//    public List<City> getCitiesWithHeader(@RequestHeader("stateId") Integer stateId){
-//
-//        System.out.println("header: ");
-//        System.out.println(stateId);
-//
-//        return cityService.getCities(stateId);
-//    }
+
+    @PostMapping("/json")
+    @ResponseStatus(value = HttpStatus.OK)
+    public List<City> getCityListWithJson(
+            @RequestBody StateId json
+    ){
+
+        System.out.println("json: ");
+        System.out.println(json.getStateId());
+
+        return cityService.getCities(json.getStateId());
+
+    }
+
+    @GetMapping("/header")
+    @ResponseStatus(value = HttpStatus.OK)
+    public List<City> getCitiesWithHeader(@RequestHeader("stateId") Integer stateId){
+
+        System.out.println("header: ");
+        System.out.println(stateId);
+
+        return cityService.getCities(stateId);
+    }
 }

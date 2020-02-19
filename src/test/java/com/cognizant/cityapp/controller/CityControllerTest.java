@@ -1,6 +1,7 @@
 package com.cognizant.cityapp.controller;
 
 import com.cognizant.cityapp.model.City;
+import com.cognizant.cityapp.model.StateId;
 import com.cognizant.cityapp.service.CityService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -58,6 +59,23 @@ class CityControllerTest {
         when(cityService.getCities(3)).thenReturn(cityList);
         assertEquals(cityList, cityController.getCityListWithPath(3));
         verify(cityService, times(1)).getCities(3);
+    }
+
+    @Test
+    public void getCityWithJson_returnListOfCities_withAvailableId(){
+        StateId stateId = new StateId();
+        stateId.setStateId(10);
+        when(cityService.getCities(10)).thenReturn(cityList);
+        assertEquals(cityList, cityController.getCityListWithJson(stateId));
+    }
+
+    @Test
+    public void getCityWithJson_callsCityService_withAvailableId(){
+        StateId stateId = new StateId();
+        stateId.setStateId(10);
+        when(cityService.getCities(10)).thenReturn(cityList);
+        assertEquals(cityList, cityController.getCityListWithJson(stateId));
+        verify(cityService, times(1)).getCities(10);
     }
 
 
